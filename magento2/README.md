@@ -3,7 +3,9 @@
 
 	docker compose up -d
 
-	cd source/
+	docker exec -it ce245_php bash
+
+	cd projects/ce245
 
 	composer create-project --repository=https://repo.magento.com/ magento/project-community-edition=2.x.x .
 
